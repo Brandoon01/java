@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#147A2A"
+    android:backgroundTint="#009688"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/SUMA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#DFB518"
+        android:text="SUMA"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="109dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6BC52B"
+        android:text="RESTA"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="178dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#DC1818"
+        android:backgroundTint="@color/purple_500"
+        android:text="MULTIPLICACION"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="246dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FF5722"
+        android:backgroundTint="#C61616"
+        android:text="DIVISION"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="321dp" />
+
+    <EditText
+        android:id="@+id/DATO1"
+        android:layout_width="179dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="VALOR1"
+        app:layout_constraintEnd_toStartOf="@+id/DATO2"
+        tools:layout_editor_absoluteY="30dp" />
+
+    <EditText
+        android:id="@+id/DATO2"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="VALOR2"
+        tools:layout_editor_absoluteX="208dp"
+        tools:layout_editor_absoluteY="32dp" />
+
+    <FrameLayout
+        android:layout_width="412dp"
+        android:layout_height="186dp"
+        android:background="#00BCD4"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="546dp">
+
+        <EditText
+            android:id="@+id/editTextNumber4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:inputType="number"
+            android:text="SU RESULTADO VA AQUI" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="134dp"
+            android:layout_height="42dp"
+            android:text="RESULTADO"
+            android:textColor="#FDFDFD"
+            android:textColorLink="#558320"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="398dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
